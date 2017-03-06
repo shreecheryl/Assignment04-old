@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+    
+    <script>
+        
+        // Practice with JavaScript OOP Concepts
+        
+        // STEP 1
+        /*
+        var ANIMAL = ANIMAL || {};
+        
+        ANIMAL.Cat = function() {};
+        ANIMAL.Dog = function() {};
+        */
+        
+        // STEP 2
+        /*
+        var Cat = {};         // literal notation
+        var Dog = function() {};    // constructor notation
+        
+        // STEP 3
+        var shanti = new Dog();
+        
+        
+        // STEP 4
+        
+        var Animal = function() {
+            window.console.log("The Animal has been created");
+        };
+        
+        var cat = new Animal();
+        
+        
+        // STEP 5
+        
+        var Animal = function(msg) {
+            window.console.log(msg);
+        };
+        
+        var cat = new Animal("I am a cat");
+        */
+        
+        // STEP 6
+        /*
+        var Animal = function(type, breed, color, height, length) {
+            this._type = type;
+            this._breed = breed;
+            this._color = color;
+            this._height = height;
+            this._length = length;
+        };
+        
+        var cat = new Animal("cat", "manx", "tan", "18 in", "22 in");
+        
+        // STEP 7
+        
+        for (var prop in cat) {
+            window.console.log(prop);
+        }
+        
+        // STEP 8
+        
+        Animal.prototype.speak = function() {
+            if (this._type == "dog") {
+                window.console.log("The " + this._color + " dog is barking!");
+            } else if (this._type == "cat") {
+                window.console.log("The " + this._color + " cat is meowing!");
+            }
+        };
+        
+        cat.speak();
+        */
+        
+        // STEP 9
+        /*
+        var Animal = function(type, breed, color, height, length) {
+            var type = type;
+            var breed = breed;
+            var color = color;
+            var height = height;
+            var length = length;
+            var checkType = function() {
+                if (type == "dog") {
+                    return "dog";
+                } else if (type != "dog") {
+                    return "cat";
+                }
+            }
+            this._type = checkType();
+        };
+        
+        Animal.prototype.speak = function() {
+            window.console.log("The " + this._type + " has made a noise!");
+        }
+        
+        var kuber = new Animal("cat", "manx", "tan", "18 in", "22 in");
+        
+        kuber.speak();
+        */
+        
+        // STEP 10
+        /*
+        String.prototype.findWords = function(word) {
+           var toFind = word.toLowerCase();
+           var newParagraph = this.toLowerCase();
+           newParagraph = newParagraph.replace(/\./g, "");
+           var words = newParagraph.split(" ");
+           var count = 0;
+           for (var i in words) {
+               if (words[i] == toFind) {
+               count += 1;
+               }
+           }
+           window.alert("The word \"" + toFind + "\" was found " + count + " times in this paragraph.");
+        }
+        
+        var paragraph = "The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog.";
+        
+        paragraph.findWords("Dog");
+        */
+        
+        
+        
+                               
+                               
+    </script>
+</head>
+<body>
+   <h1>Assignment 4</h1> 
+</body>
+</html>
